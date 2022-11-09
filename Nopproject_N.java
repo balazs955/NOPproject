@@ -30,12 +30,16 @@ public class Nopproject_N {
       }
       return reversed;
     }
+    public static void sorminta(){
+        System.out.println("*************************************************");
+    }
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner myObj = new Scanner(System.in);
         System.out.println("Kérek egy évszámot: ");
         int s = myObj.nextInt();
         System.out.println("Szökőév-e ? " + szev(s));
+        sorminta();
         System.out.println("Az évszám fordított sorrendje: " + sorrend(s));
     }
 
