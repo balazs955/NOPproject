@@ -12,33 +12,23 @@ import java.util.Scanner;
  * @author user3
  */
 public class JavaApplication21 {
-
-    /**
-     * @param args the command line arguments
-     */
+   public static boolean isLeapYear(int szokoev) {
+    if (szokoev % 4 != 0) {
+        return false;
+  } else if (szokoev % 400 == 0) {
+        return true;
+  } else if (szokoev % 100 == 0) {
+        return false;
+  } else {
+        return true;
+  }
+ }
+   
     public static void main(String[] args) {
-     // year to be checked
+     
     Scanner bill = new Scanner(System.in);
     System.out.println("Adj meg egy évszámot: ");
     int szokoev = bill.nextInt();
-    
-    // szökőév-e
-    if (szokoev % 400 == 0) {
-    } 
-    else if (szokoev % 100 == 0) {
-      System.out.println(szokoev + " nem szökőév.");
-    } 
-    else if (szokoev% 4 == 0) {
-      
-    } 
-    else {
-     System.out.println(szokoev + "  nem szökőév.");
-    }
-  }   
-    
-    
-        
+
 }
-    
-
-
+}
